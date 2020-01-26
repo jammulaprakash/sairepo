@@ -1,0 +1,21 @@
+Algorithm Main(n)
+{
+  sum:=0;
+  x:=1;
+  while(sum ≤ n) do
+  {
+    write(sum);
+    sum:=Fibonacci(x);
+    x:=x+1;
+  }
+}
+
+Fibonacci(x)
+{
+  if(x=0 or x=1) then
+     return x;
+  else
+  {
+    return Fibonacci(x-1) + Fibonacci(x-2);
+  }
+}
